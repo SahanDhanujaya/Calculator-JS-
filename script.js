@@ -1,5 +1,14 @@
-let btn1 = $('btn1').val();
-console.log(btn1);
-
-let btn2 = $('#btn2').val();
-console.log(btn2);
+const display = document.getElementById('display');
+function displayValue(input){
+    display.value += input;
+}
+function calculate(){
+    try{
+    display.value = eval(display.value);
+    }catch(error){
+        display.value = "Error";
+    }
+}  
+function clearDisplay(){
+    display.value = "";
+}

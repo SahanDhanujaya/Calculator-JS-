@@ -8,28 +8,28 @@
 </head>
 <body>
     <main>
-        <h2>123</h2>
+        <input id="display" readonly>
         <section>
-            <button id="btn1" style="color: red;">AC</button>
-            <button id="btn2">C</button>
-            <button id="btn3">%</button>
-            <button id="btn4">/</button>
-            <button id="btn5">7</button>
-            <button id="btn6">8</button>
-            <button id="btn7">9</button>
-            <button id="btn8">X</button>
-            <button id="btn9">4</button>
-            <button id="btn10">5</button>
-            <button id="btn11">6</button>
-            <button id="btn12">-</button>
-            <button id="btn13">1</button>
-            <button id="btn14">2</button>
-            <button id="btn15">3</button>
-            <button id="btn16">+</button>
-            <button id="btn17">.</button>
-            <button id="btn18">0</button>
-            <button id="btn19"><</button>
-            <button id="btn20">=</button>
+            <button id="btn1" style="color: red;" onclick="clearDisplay()">AC</button>
+            <button id="btn2" onclick="clearDisplay()">C</button>
+            <button id="btn3" onclick="displayValue('%')">%</button>
+            <button id="btn4" onclick="displayValue('/')">/</button>
+            <button id="btn5" onclick="displayValue('7')">7</button>
+            <button id="btn6" onclick="displayValue('8')">8</button>
+            <button id="btn7" onclick="displayValue('9')">9</button>
+            <button id="btn8" onclick="displayValue('*')">x</button>
+            <button id="btn9" onclick="displayValue('4')">4</button>
+            <button id="btn10" onclick="displayValue('5')">5</button>
+            <button id="btn11" onclick="displayValue('6')">6</button>
+            <button id="btn12" onclick="displayValue('-')">-</button>
+            <button id="btn13" onclick="displayValue('1')">1</button>
+            <button id="btn14" onclick="displayValue('2')">2</button>
+            <button id="btn15" onclick="displayValue('3')">3</button>
+            <button id="btn16" onclick="displayValue('+')">+</button>
+            <button id="btn17" onclick="displayValue('.')">.</button>
+            <button id="btn18" onclick="displayValue('0')">0</button>
+            <button id="btn19" onclick="displayValue('<')"><</button>
+            <button id="btn20" onclick="calculate()">=</button>
         </section>
     </main>
     <script src="assets/lib/jquery-3.7.1.min.js"></script>
